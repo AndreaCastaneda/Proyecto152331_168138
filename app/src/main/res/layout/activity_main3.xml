@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dai.proyecto.Main3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="131dp">
+
+        <TextView
+            android:id="@+id/txtArticulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Articulos en Venta"
+            android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+        <EditText
+            android:id="@+id/etBusqueda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:ems="10"
+            android:inputType="textShortMessage" />
+
+        <SearchView
+            android:id="@+id/busqueda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-50dp" />
+
+        <ListView
+            android:id="@+id/lvListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:onClick="ventana4"
+            android:text="Visita el Sitio Web" />
+
+        <Button
+            android:id="@+id/btSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="20dp"
+            android:text="Salir" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifica/Elimina" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registra un Articulo"
+            android:onClick="ventana5"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
